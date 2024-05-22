@@ -12,11 +12,11 @@ async function bootstrap() {
 
   // Enable CORS for a specific origin
   app.enableCors({
-    origin: 'https://blackshopbackend.vercel.app/',
+    origin: 'http://localhost:3001/',
     credentials: true, // Cho phép truy cập với credentials (cookies, authorization headers)
   });
   app.use('/uploads', express.static(join(__dirname, '..', 'uploads')));
-  // await app.listen(3000);
+  await app.listen(3000);
 }
 
 bootstrap();

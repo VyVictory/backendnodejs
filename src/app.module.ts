@@ -16,7 +16,7 @@ import { UploadModule } from './upload/upload.module';
       envFilePath: '.env',
       isGlobal: true
     }),
-    MongooseModule.forRoot(process.env.DB_URI),
+    MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop'),
     ProductModule,
     ProductTypeModule,
     UserModule,
