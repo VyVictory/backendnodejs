@@ -1,10 +1,11 @@
-import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
+// import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 // import { AuthMiddleware } from './user/middlewares/auth.middleware'; // Corrected import path
 // import { ProductModule } from './product/product.module';
 // import { ConfigModule } from '@nestjs/config';
-import { MongooseModule } from '@nestjs/mongoose';
+//import { MongooseModule } from '@nestjs/mongoose';
 // import { UserModule } from './user/user.module';
 //import { CartModule } from './cart/cart.module';
 // import { AuthModule } from './auth/auth.module';
@@ -13,7 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop'),
+   // MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop'),
     //ProductModule,
    // ProductTypeModule,
     //UserModule,
