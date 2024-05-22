@@ -5,11 +5,12 @@ import { ProductModule } from './product/product.module';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UserModule } from './user/user.module';
-import { AuthMiddleware } from './user/midđlewares/auth.middleware';
+import { AuthMiddleware } from './user/midđlewares/auth.middleware'; // Corrected import path
 //import { CartModule } from './cart/cart.module';
 import { AuthModule } from './auth/auth.module';
 import { ProductTypeModule } from './product_type/product-type.module';
 import { UploadModule } from './upload/upload.module';
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -35,3 +36,4 @@ export class AppModule {
     })
   }
 }
+
