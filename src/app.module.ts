@@ -21,7 +21,7 @@ import { UploadModule } from './upload/upload.module';
     ProductModule,
     ProductTypeModule,
     UserModule,
-    //UploadModule,
+    UploadModule,
    // CartModule,
     AuthModule
   ],
