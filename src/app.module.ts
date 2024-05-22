@@ -14,7 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop'),
+    MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/your_database_name_here?retryWrites=true&w=majority&appName=blackshop'),
     //ProductModule,
    // ProductTypeModule,
     //UserModule,
