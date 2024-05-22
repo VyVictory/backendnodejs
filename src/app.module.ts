@@ -9,7 +9,7 @@ import { UserModule } from './user/user.module';
 //import { CartModule } from './cart/cart.module';
 import { AuthModule } from './auth/auth.module';
 import { ProductTypeModule } from './product_type/product-type.module';
-import { UploadModule } from './upload/upload.module';
+//import { UploadModule } from './upload/upload.module';
 
 @Module({
   imports: [
@@ -21,7 +21,7 @@ import { UploadModule } from './upload/upload.module';
     ProductModule,
     ProductTypeModule,
     UserModule,
-    UploadModule,
+   // UploadModule,
    // CartModule,
     AuthModule
   ],
