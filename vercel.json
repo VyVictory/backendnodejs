@@ -1,5 +1,8 @@
 {
     "version": 2,
+    "evn":{
+        "MONGO_URI":"@blackshop"
+    },
     "builds": [
         {
             "src": "src/main.ts",
