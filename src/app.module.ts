@@ -3,7 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import { ConfigModule } from '@nestjs/config';
-import { MongooseModule } from '@nestjs/mongoose';
+// import { MongooseModule } from '@nestjs/mongoose';
 
 import { AuthMiddleware } from './user/midđlewares/auth.middleware';
 
@@ -19,7 +19,7 @@ import { AuthMiddleware } from './user/midđlewares/auth.middleware';
       envFilePath: '.env',
       isGlobal: true
     }),
-    MongooseModule.forRoot("mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop"),
+    // MongooseModule.forRoot("mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop"),
   //   ProductModule,
   //   ProductTypeModule,
   //   UserModule,
