@@ -16,7 +16,7 @@ async function bootstrap() {
     credentials: true, // Cho phép truy cập với credentials (cookies, authorization headers)
   });
   app.use('/uploads', express.static(join(__dirname, '..', 'uploads')));
-  await app.listen(3000);
+  // await app.listen(3000);
 }
 
 bootstrap();
