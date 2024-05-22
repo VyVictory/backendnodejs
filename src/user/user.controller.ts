@@ -5,7 +5,7 @@ import { UserResponseType } from './types/userResponse';
 import { LoginDto } from './dto/login.dto';
 import { UserEntity } from './user.entity';
 import { request } from 'http';
-import { ExpressRequest } from './midđlewares/auth.middleware';
+import { ExpressRequest } from './middlewares/auth.middleware';
 
 @Controller('user')
 export class UserController {
