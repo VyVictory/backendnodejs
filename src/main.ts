@@ -12,7 +12,7 @@ async function bootstrap() {
 
   // Enable CORS for a specific origin
   app.enableCors({
-    origin: 'http://localhost:3001',
+    origin: 'http://localhost:3000',
     credentials: true, // Cho phép truy cập với credentials (cookies, authorization headers)
   });
   app.use('/uploads', express.static(join(__dirname, '..', 'uploads')));
