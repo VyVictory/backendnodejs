@@ -13,27 +13,17 @@ import { ProductTypeModule } from './product_type/product-type.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      envFilePath: '.env',
-      isGlobal: true
-    }),
     MongooseModule.forRoot('mongodb+srv://blackshop:blackshopmongodb@blackshop.5c90je5.mongodb.net/?retryWrites=true&w=majority&appName=blackshop'),
-    ProductModule,
-    ProductTypeModule,
-    UserModule,
+    //ProductModule,
+   // ProductTypeModule,
+    //UserModule,
    // UploadModule,
    // CartModule,
-    AuthModule
+   // AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {
-  configure(consumer: MiddlewareConsumer) {
-    consumer.apply(AuthMiddleware).forRoutes({
-      path: '*',
-      method: RequestMethod.ALL
-    });
-  }
 }
 
