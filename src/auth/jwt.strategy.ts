@@ -15,7 +15,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     ){
         super({
             jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-            secretOrKey: 'nemotapcode' // Ensure that JWT_SECRET is set in the environment
+            secretOrKey: process.env.JWT_SECRET
         })
     }
 
@@ -30,4 +30,5 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         
         return user;
     }
+
 }

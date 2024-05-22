@@ -16,9 +16,9 @@ import { JwtStrategy } from './jwt.strategy';
       inject: [ConfigService],
       useFactory: (config: ConfigService) => {
         return{
-          secret: config.get<string>('nemotapcode'),
+          secret: config.get<string>('JWT_SECRET'),
           signOptions: {
-            expiresIn: config.get< string | number >('1d'),
+            expiresIn: config.get< string | number >('JWT_EXPIRES'),
           },
         };
       },
